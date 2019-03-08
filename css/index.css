@@ -1,0 +1,66 @@
+@charset "utf-8";
+
+:root{
+	--fz: 16px;
+	--ff: sans-serif;
+}
+
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+
+html{
+	font-size: var(--fz);
+	font-family: var(--ff);
+}
+
+body{
+	font-size: inherit;
+	font-family: inherit;
+	margin: 0;
+}
+
+.o-main {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.o-header {
+    display: flex;
+    padding: 0.5rem 1rem;
+    min-height: 4rem;
+}
+
+.o-section {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    
+    flex: 1 0 100%;
+}
+
+.o-footer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 0.5rem 1rem;
+    min-height: 4rem;
+}
+
+.c-form{
+	min-width: 380px;
+}
+.c-form input[type="email"],
+.c-form input[type="password"]
+{
+	width: 100%;
+	min-height: 2rem;
+}
+
+.c-form input[type="submit"]
+{
+	border: none;
+	min-height: 2rem;
+    box-shadow: 0 0 0px 1px grey;
+}
